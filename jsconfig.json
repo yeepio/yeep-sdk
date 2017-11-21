@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6"
+  },
+  "exclude": [
+    "node_modules",
+    "lib",
+    "coverage",
+    "__test__",
+    "*.spec.js",
+    "*.test.js",
+    "*.json"
+  ]
+}

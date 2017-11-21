@@ -1,0 +1,48 @@
+{
+  "name": "yeep",
+  "version": "0.1.0",
+  "description": "Yeep API client for Node.js and the browser.",
+  "keywords": [
+    "access",
+    "control",
+    "API",
+    "client"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeepio/yeep-sdk.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Dimitrios C. Michalakos",
+    "email": "dimitris@jmike.gr",
+    "url": "https://github.com/jmike"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "babel src --out-dir lib --copy-files --ignore *.spec.js,*.test.js",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "lodash": "^4.17.2",
+    "typeof": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "rimraf": "^2.6.2"
+  }
+}
