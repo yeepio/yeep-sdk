@@ -11,7 +11,7 @@ Yeep API client for Node.js and the browser.
 ## Installation
 
 ```
-$ npm install amqp-message-bus
+$ npm install yeep
 ```
 
 #### Requirements
