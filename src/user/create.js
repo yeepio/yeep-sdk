@@ -8,7 +8,8 @@
  * @property {string} props.firstName
  * @property {string} props.lastName
  * @property {boolean} [props.invite=false]
- * @property {string} [props.role="MEMBER"]
+ * @property {string} [props.role]
+ * @property {string} [props.image]
  * @returns {Promise<Object>}
  */
 export default function create(client, {
@@ -17,7 +18,8 @@ export default function create(client, {
   firstName,
   lastName,
   invite = false,
-  role
+  role,
+  image
 }) {
   return client.request({
     url: '/v2/user.create',
@@ -29,6 +31,7 @@ export default function create(client, {
       lastName,
       invite,
       role,
+      image
     }
   })
     .then((response) => response.data);
