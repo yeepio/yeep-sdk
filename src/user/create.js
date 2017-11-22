@@ -12,7 +12,7 @@
  * @property {string} [props.image]
  * @returns {Promise<Object>}
  */
-export default function create(client, {
+export default function (client, {
   org,
   email,
   firstName,
