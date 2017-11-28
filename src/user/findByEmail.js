@@ -7,17 +7,11 @@
  * @property {string} props.email
  * @returns {Promise<Object>}
  */
-export default function (client, {
-  org,
-  email
-}) {
+export default function (client, props) {
   return client.request({
     url: '/v2/user.findByEmail',
     method: 'post',
-    data: {
-      org,
-      email
-    }
+    data: props
   })
     .then((response) => {
       return {
