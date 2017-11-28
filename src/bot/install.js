@@ -6,6 +6,7 @@
  * @property {string} props.type
  * @property {string} props.org
  * @property {Object} props.body
+ * @property {boolean} props.resetPassword
  * @returns {Promise}
  */
 export default function (client, props) {
