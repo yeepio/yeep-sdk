@@ -5,6 +5,7 @@
  * @property {string} props.name
  * @property {string} props.slug
  * @property {string} [props.signupToken]
+ * @property {boolean} [props.notify=false]
  * @property {Object} props.admin
  * @property {string} props.admin.email
  * @property {string} props.admin.firstName
