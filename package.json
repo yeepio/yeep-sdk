@@ -1,6 +1,6 @@
 {
   "name": "yeep",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Yeep API client for Node.js and the browser.",
   "keywords": [
     "access",

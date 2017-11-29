@@ -1,3 +1,7 @@
+## 0.4.0 - 2017-11-29
+
+* Expose additional methods: `petition.list()`.
+
 ## 0.3.0 - 2017-11-28
 
 * Expose additional methods: `user.forgotPassword()`, `user.resetPassword()`.
