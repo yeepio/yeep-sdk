@@ -1,3 +1,7 @@
+## 0.5.0 - 2017-12-01
+
+* Expose additional methods: `session.create`, `session.list`.
+
 ## 0.4.0 - 2017-11-29
 
 * Expose additional methods: `petition.list()`.
