@@ -6,6 +6,7 @@ import * as orgMethods from './org';
 import * as userMethods from './user';
 import * as petitionMethods from './petition';
 import * as integrationMethods from './integration';
+import * as sessionMethods from './session';
 import * as signupMethods from './signup';
 import * as resourceMethods from './resource';
 
@@ -78,6 +79,7 @@ function create({
     user: mapValues(userMethods, (f) => partial(f, client)),
     petition: mapValues(petitionMethods, (f) => partial(f, client)),
     integration: mapValues(integrationMethods, (f) => partial(f, client)),
+    session: mapValues(sessionMethods, (f) => partial(f, client)),
     signup: mapValues(signupMethods, (f) => partial(f, client)),
     resource: mapValues(resourceMethods, (f) => partial(f, client)),
   };
