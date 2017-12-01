@@ -9,6 +9,7 @@ import * as integrationMethods from './integration';
 import * as sessionMethods from './session';
 import * as signupMethods from './signup';
 import * as resourceMethods from './resource';
+import * as handleMethods from './handle';
 
 const ctx = {};
 
@@ -82,6 +83,7 @@ function create({
     session: mapValues(sessionMethods, (f) => partial(f, client)),
     signup: mapValues(signupMethods, (f) => partial(f, client)),
     resource: mapValues(resourceMethods, (f) => partial(f, client)),
+    handle: mapValues(handleMethods, (f) => partial(f, client)),
   };
 }
 
