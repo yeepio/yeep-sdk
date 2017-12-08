@@ -13,6 +13,5 @@ export default function (client, props) {
     url: '/v2/petition.assign',
     method: 'post',
     data: props
-  })
-    .then((response) => response.data);
+  });
 }

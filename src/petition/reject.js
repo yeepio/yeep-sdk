@@ -12,6 +12,5 @@ export default function (client, props) {
     url: '/v2/petition.reject',
     method: 'post',
     data: props
-  })
-    .then((response) => response.data);
+  });
 }
